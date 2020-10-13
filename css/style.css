@@ -1,0 +1,493 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+/* Nav */
+.mynav{
+    background-color: #0f75bb !important;
+}
+#navBtn{
+    outline: 0 !important;
+    border: 1px solid white;
+}
+.navbar-custom{
+    background-color: transparent !important;
+}
+.navbar-custom li{
+    padding-left: 25px;
+}
+.logoWidth{
+    width: 70px;
+    height: 70px;
+}
+/* slider */
+.banner{
+    background-color: #1a1919;
+}
+.slider{
+    position: relative;
+}
+.sliderText{
+    font-size: 51px;
+    color: white;
+    position: absolute;
+    left: 0px;
+    right: 0;
+    bottom: 18px;
+    font-family: 'Play', sans-serif;
+}
+/* choose */
+.choose{
+    background-color: #e9f3fa;
+}
+.chooseH{
+    font-size: 51px;
+    color: #0f1f2b;
+    font-family: 'Play', sans-serif;
+}
+.lineClass{
+    width: 40px;
+    background-color: #0f75bb;
+    padding: 2px;
+}
+.chooseP{
+    color:#666666;
+    font-size: 16px;
+}
+.chooseBtn{
+    background-color: #0f75bb;
+    color: white;
+    border:none;
+    transition: all .3s ease;
+}
+.chooseBtn:hover{
+    background: #0f75bb;
+    transform: scale(1.2);
+}
+
+/* paid */
+.paidH{
+    color:#0f1f2b;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+}
+.paidMain{
+    color: #0f75bb;
+    font-size: 53px;
+    font-family: 'Play', sans-serif;
+
+}
+.paidImg{
+    border-radius: 15px;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imgBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-text {
+    color:white;
+    font-size: 25px;
+    font-family: 'Play', sans-serif;
+    position: absolute;
+    transition: 0.4s ease-in-out;
+    transform: translateY(0);
+    padding-left: 23px;
+}
+
+.paidImg:hover + .img-text{
+    transform: translateY(-100px);
+    transition: 0.4s ease-in-out;
+}
+
+/* Services */
+.globalServices{
+    font-size: 14px;
+    font-family: 'Play', sans-serif;
+    text-align: right;
+}
+.serviceSectionsHeight{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    height: 260px;
+    
+}
+.serviceSection1,.serviceSection4 {
+    color: white;
+    background: #1f8bd4;
+    background: -moz-linear-gradient(top,  #1f8bd4 0%, #1076bc 100%); 
+    background: -webkit-linear-gradient(top,  #1f8bd4 0%,#1076bc 100%); 
+    background: linear-gradient(to bottom,  #1f8bd4 0%,#1076bc 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f8bd4', endColorstr='#1076bc',GradientType=0 ); 
+}
+.serviceSection2,.serviceSection3 {
+    color: #666666;
+    background: #fdfdfd; 
+    background: -moz-linear-gradient(top,  #fdfdfd 0%, #e8e8e8 100%); 
+    background: -webkit-linear-gradient(top,  #fdfdfd 0%,#e8e8e8 100%); 
+    background: linear-gradient(to bottom,  #fdfdfd 0%,#e8e8e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#e8e8e8',GradientType=0 ); 
+
+}
+.servicesImg{
+    position: relative;
+    right: 66px;
+}
+.servicebtn1{
+    background-color: #0e4f7c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px;
+    transition: all .3s ease;
+}
+.servicebtn1:hover{
+    transform: scale(1.2);
+}
+.servicebtn2{
+    background-color: #147cc3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px;
+    transition: all .3s ease;
+}
+.servicebtn2:hover{
+    transform: scale(1.2);
+
+}
+/* Focus */
+
+.focusMain{
+    background-color: #e9f3fa;
+}
+.focusMainH{
+    color: #333333;
+    font-size: 43px;
+    font-family: 'Play', sans-serif;
+}
+.focusP{
+color:#666666;
+font-size:16px;
+font-family: 'Play', sans-serif;
+}
+.focusImages{
+    border: 12px solid white;
+    border-radius: 100%;
+    width: 142px;
+    line-height: 50px;
+}
+.focusH{
+    color: #333333;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+}
+.focusSubP{
+    color: #666666;
+    font-size: 15px;
+    font-family: 'Play', sans-serif;
+
+}
+.serviceShape{
+    position: relative;
+    z-index: 999;
+}
+.serviceShape::after{
+    content: '';
+    z-index: -1;
+    background-image: url('../images/focus1after.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 120px;
+    width: 100%;
+    left: 155px;
+    top: 6px;
+}
+.serviceShape2::after{
+    background-image: url('../images/focus2after.png');
+}
+.serviceShape4::after{
+    background: none;
+    width: 0 !important;
+}
+/* Signup */
+.signupMain{
+    color: #0f1f2b;
+    font-size: 40;
+    font-family: 'Play', sans-serif;
+}
+.signupP{
+    font-size: 16px;
+    color: #666666;
+    font-family: 'Play', sans-serif;
+
+}
+.signupH{
+    color: #0f75bb;
+    font-size: 40px;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+
+}
+.signupSubP{
+    color: #333333;
+    font-size: 30px;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+}
+.signupPara{
+    color: #666666;
+    font-size: 16px;
+    font-family: 'Play', sans-serif;
+}
+
+/* blog */
+.blogMain{
+    background-color: #e9f3fa;
+}
+.card{
+    width: 18rem;
+}
+.card-title{
+    color: #333333 !important;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+}
+.card-text{
+    color: #333333 !important;
+    font-size: 16px;
+    font-family: 'Play', sans-serif;
+}
+.cardDate{
+    color: #0f75bb;
+    font-size: 13px;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+}
+.cardBtn{
+    background-color: #0f75bb !important;
+    color: white;
+}
+/* customers */
+.customerH{
+    color: #333333;
+    font-size: 45px;
+    font-family: 'Play', sans-serif;
+}
+.customerMainH{
+    color: #666666;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+}
+/* client */
+.clientMain{
+    color: #0f1f2b;
+    font-size: 50px;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+}
+.clientSub{
+    color: #666666;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+}
+.testmonialName{
+    color: #333333;
+    font-size: 16px;
+    font-family: 'Play', sans-serif;
+    font-weight: bold
+}
+.testmonialP{
+    color: #666666;
+    font-size: 16px;
+    font-family: 'Play', sans-serif;
+}
+.fa-star{
+    color: #ffc663;
+}
+.testimonialContent{
+    -webkit-box-shadow: 0px 0px 9px 4px rgba(226,226,226,1);
+    -moz-box-shadow: 0px 0px 9px 4px rgba(226,226,226,1);
+    box-shadow: 0px 0px 9px 4px rgba(226,226,226,1);
+}
+/* footer */
+.footerBack{
+    background-color: #051a24;
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+.footerP{
+    font-size: 14px;
+}
+.footerH{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+.footerli a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+}
+.email{
+    color: #0f75bb;
+}
+.feedBackText{
+    font-size: 14px;
+}
+.fa-paper-plane{
+    color: white;
+}
+.sendBtn{
+    background-color: #0f75bb;
+    border: 1px solid white;
+    border-radius: 0px !important;
+}
+.form-control{
+    border-radius: 0px !important;
+}
+.footerCopyright{
+    background-color: #0f75bb;
+}
+.footerCopyright p{
+    color: white;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+.socialIcons{
+    border: 12px solid white;
+    border-radius: 100%;
+    width: 37px;
+    line-height: 0px;}
+@media (max-width:1199px){
+    .globalServices{
+        text-align: center;
+
+    }
+    .serviceSectionsHeight{
+        height: auto;
+    }
+    .serviceSectionsHeight {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .servicesImg{
+        position: static;
+
+    }
+    .serviceShape::after{
+        left: 112px;
+        top: 6px;
+    }
+}
+
+@media (max-width:991px){
+    .navbar-custom li{
+        padding-left: 0px;
+    }
+    .sliderText{
+        font-size: 38px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+    }
+    .chooseH {
+        font-size: 45px;
+    }
+    .paidMain {
+        font-size: 45px;
+    }
+    .focusH {
+        font-size: 38px;
+    }
+    .focusP {
+        font-size: 16px;
+    }
+    .serviceShape::after{
+        left: 223px;
+        top: 10px;
+    }
+    .serviceShape2::after{
+        background:none;
+        width: 0;
+    }
+
+ 
+}
+@media (max-width:767px){
+    .sliderText{
+        font-size: 21px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -7px;
+    }
+    .chooseH {
+        font-size: 40px;
+    }
+    .paidMain {
+        font-size: 41px;
+    }
+    .focusH {
+        font-size: 32px;
+    }
+    .focusP {
+        font-size: 15px;
+    }
+    .serviceShape::after{
+        display: none;
+    }
+
+}
+@media (max-width:480px){
+    .sliderText{
+        font-size: 16px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -8px;
+    }
+    .chooseH {
+        font-size: 38px;
+    }
+    .paidH{
+        font-size: 13px;
+    }
+    .focusH {
+        font-size: 27px;
+    }
+    .focusP {
+        font-size: 13px;
+    }
+    .focusMainH {
+        font-size: 29px;
+    }
+    .focusP {
+        font-size: 11px;
+    }
+    .customerH {
+        font-size: 33px;
+    }
+    .customerMainH {
+        font-size: 14px;
+    }
+    .clientMain {
+        font-size: 32px;
+    }
+    .clientSub {
+        font-size: 15px;
+    }
+
+
+}
